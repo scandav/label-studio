@@ -446,6 +446,7 @@ const RootTitle: FC<any> = observer(({
             </Elem>
           )}
         </Elem>
+        {props.isGroup && <Elem name="index">{props.children?.length}</Elem>}
         <RegionControls
           hovered={hovered}
           item={item}
