@@ -19,7 +19,7 @@
       {% endif %}
       </div>
     <div>
-      <input type="password" class="ls-input" name="password" id="password" placeholder="Password">
+      <input type="password" class="ls-input" name="password" id="password" placeholder="Password" autocomplete="off">
       {% if user_form.errors.password %}
         <ul class="field_errors">
           {% for error in user_form.errors.password %}
