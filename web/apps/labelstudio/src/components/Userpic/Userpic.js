@@ -27,9 +27,11 @@ export const Userpic = forwardRef(({
 
   useEffect(() => {
     if (user) {
-      const {first_name, last_name, email, initials, username} = user;
+      const {first_name, last_name, email, initials, username, id} = user;
 
-      if (initials) {
+      if (id) {
+        setFinalUsername(id.toString()); // modified for iRORA annotation
+      } else if (initials) {
         setFinalUsername(initials);
       } else if (username) {
         setFinalUsername(username);

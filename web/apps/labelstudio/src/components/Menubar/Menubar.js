@@ -169,9 +169,9 @@ export const Menubar = ({
           )}>
             <div title={config.user.email} className={menubarClass.elem('user')}>
               <Userpic user={config.user}/>
-              {showNewsletterDot && (
+              {/* {showNewsletterDot && (
                 <div className={menubarClass.elem('userpic-badge')} />
-              )}
+              )} */}
             </div>
           </Dropdown.Trigger>
         </div>
